@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+app1 : {{app1}}<br>
+app2 : {{app2}}
+<form method="post" action="http://127.0.0.1:8000/m/">
+    {% csrf_token %}
+    <h4>username : <input name="username" type="text"></h4>
+    <h4>password : <input name="password" type="text"></h4>
+    <input type="submit">
+</form>
+</body>
+</html>
